@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+         <li class="nav-item">
+          <a class="nav-link" href="{% url 'login' %}">Login</a>
+         </li>
+           <li class="nav-item">
+          <a class="nav-link" href="{% url 'register' %}">Register</a>
+         </li>
+
+
+        <li class="nav-item dropdown ">
+
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Department
+               </a>
+
+
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+             <li> <a class="dropdown-item"  href=""><strong>
+            <ol> <a href="{% url 'commerce' %}">Commerce</a>
+                 <a href="{% url 'science' %}">Science</a>
+                 <a href="{% url 'architecture' %}">Architecture</a>
+                 <a href="{% url 'inf_technology' %}">Information Technology</a>
+                 <a href="{% url 'fashion_design' %}">Fashion Design</a> </ol>
+             </strong></a></li>
+
+            <li><a class="dropdown-item" href=""></a></li>
+
+
+
+
+          </ul>
+            </li>
+      </ul>
+         <a class="btn btn-primary" href="{% url 'login' %}"> Click here to Login</a>
+    </div>
+  </div>
+</nav>

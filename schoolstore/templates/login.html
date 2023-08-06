@@ -1,0 +1,25 @@
+{% load static %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+<body style="background-color:skyblue;margin-top:50">
+<div class="container" >
+    <div>
+        <div>
+            <a href="{% url 'register' %}">Registration link</a>
+<form action="login" method="post">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="Username">
+    <input type="password" name="password" placeholder="Password"><br>
+
+
+</form>
+            <a class="btn btn-success" href="{% url 'requirements' %}">SUBMIT</a>
+
+            </div>
+        </div>
+    </div>
+
+<div>
+
+
+    </div>
+</body>

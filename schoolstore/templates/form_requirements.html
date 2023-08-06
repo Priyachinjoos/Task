@@ -1,0 +1,129 @@
+{% load static %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<html>
+<body style="background-color:lavender;margin-top:50">
+
+<div>
+  <h1 style="color:black;text-align:center;"><u>REQUIREMENTS</u></h1>
+
+ <div class="container">
+   <div>
+     <div>
+           {% csrf_token %}
+<from method="post">
+  {% csrf_token %}
+  <input type="text" name="name" placeholder="Name"> <br>
+    <input type="date" name="DOB" placeholder="Date Of Birth"><br>
+  <input type="number" name="age" placeholder="Age"> <br>
+
+    <input type="checkbox" name="gender">
+  male
+   <input type="checkbox" name="gender">
+  female
+<br>
+  <input type="text" name="phone number" placeholder="Phone number"> <br>
+    <input type="email" name="email" placeholder="Email id"><br>
+  <input type="text" name="address" placeholder="Address"> <br>
+
+
+<head>
+    <title>Essential JS 2 DropDownList</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript UI Controls" />
+    <meta name="author" content="Syncfusion" />
+    <link href="styles.css" rel="stylesheet" />
+   <link href="https://cdn.syncfusion.com/ej2/22.2.5/ej2-base/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/22.2.5/ej2-inputs/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/22.2.5/ej2-dropdowns/styles/material.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type ="text/javascript"></script>
+</head>
+
+<body>
+
+    <div id='container' style="margin:0 auto; ">
+        <select id="selectElement">
+            <optgroup label="Commerce">
+                <option value="1">Bcom</option>
+                <option value="2">BBA</option>
+                <option value="3">Bcom CA</option>
+            </optgroup>
+            <optgroup label="Science">
+                <option value="4" selected="selected">BSC</option>
+                <option value="5">BSC Computer Application</option>
+                <option value="6">BSC Physics</option>
+            </optgroup>
+            <optgroup label="Information Technology">
+                <option value="1">Computer Programming</option>
+                <option value="2">Web Technology</option>
+                <option value="3">Software Engineering</option>
+            </optgroup>
+            <optgroup label="ARTS">
+                <option value="4" selected="selected">BA</option>
+                <option value="5">BA Economics</option>
+                <option value="6">BA English</option>
+            </optgroup>
+             <optgroup label="Fashion Designing">
+                <option value="4" selected="selected">Diploma in Design</option>
+                <option value="5">Diploma in Jwellery Design</option>
+                <option value="6">Diploma in Fashion Photography</option>
+            </optgroup>
+
+        </select>
+    </div>
+
+</body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+
+
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Purpose
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu dropdown-menu-right">
+      <li><a href="">For Enquiry</a></li>
+      <li><a href="#">Place Order</a></li>
+      <li><a href="#">Return</a></li>
+      <li class="divider"></li>
+      <li><a href="">About Us</a></li>
+    </ul>
+  </div>
+
+
+
+    Materials Provide  <br>
+    <input type="checkbox">Exam Papers <br>
+    <input type="checkbox"> Note book <br>
+    <input type="checkbox">Pen <br>
+    <input type="checkbox">Record Notes <br>
+
+    <a class="btn btn-success" href="{% url 'ordconfirm' %}" > Submit</a>
+
+    <a class="btn btn-primary" href="{% url 'logout' %}"> Logout </a>
+
+
+
+
+
+ </div>
+
+  </html>
+
+<!--</form>-->
+
+<!--       </div>-->
+<!--     </div>-->
+<!--</div>-->
+<!--  </div>-->
+
+
+<!--</body>-->
+<!--</html>-->
